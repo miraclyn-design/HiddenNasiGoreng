@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 45cbb74d496db4fc29815f72176571c9
+guid: 86d89d37124814526bc1a69198a345b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7469740316118452663
-    second: Untitled_Artwork 4_0
+      213: 5739979302634797517
+    second: Silang Attempt-11_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork 4_0
+      name: Silang Attempt-11_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 7
-        width: 133
-        height: 108
+        x: 0
+        y: 0
+        width: 323
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 946785542c6265890800000000000000
-      internalID: -7469740316118452663
+      spriteID: dc934a793c088af40800000000000000
+      internalID: 5739979302634797517
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled_Artwork 4_0: -7469740316118452663
+      Silang Attempt-11_0: 5739979302634797517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

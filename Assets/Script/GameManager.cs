@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public int currentItemAmount = 0;
     [SerializeField] private GameObject finishScreen;
     [SerializeField] ParticleSystem WinParticle;
+    public AudioSource sfxParticle;
+    public AudioSource sfxYey;
 
     public TMP_Text txtItem;
 
@@ -26,6 +28,12 @@ public class GameManager : MonoBehaviour
         {
             finishScreen.SetActive(true);
             WinParticle.Play();
+
+            sfxParticle.pitch = Random.Range(0.9f, 1.2f);
+            sfxParticle.PlayOneShot(sfxParticle.clip);
+
+            sfxYey.pitch = Random.Range(0.9f, 1.2f);
+            sfxYey.PlayOneShot(sfxYey.clip);
         }
     }
 }

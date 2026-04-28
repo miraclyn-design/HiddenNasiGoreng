@@ -10,6 +10,7 @@ public class TapHiddenObject : MonoBehaviour
     [SerializeField] private float alphaKotakAktif = 1f;
     [SerializeField] private float alphaKotakNonaktif = 0.3f;
     [SerializeField] private AudioClip tapSound;
+    [SerializeField] private AudioClip closeSound;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private GameObject objBener;
 
@@ -86,6 +87,12 @@ public class TapHiddenObject : MonoBehaviour
 
     public void CollectItem()
     {
+            if (closeSound != null && audioSource != null)
+            {
+                audioSource.pitch = Random.Range(0.9f, 1.1f);
+                audioSource.PlayOneShot(closeSound);
+            }
+
         gameManager.CollectItem();
     }
 }

@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5670826f83ead45fb8b131da01a48358, type: 3}
   m_Name: SakitPerut2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEntry
-  characterName: Lynn
-  characterImage: {fileID: 21300000, guid: cf509411028e1411f9d2d6eb881a3b98, type: 3}
-  dialogueText: '"Tapi... apa yang salah? Kita kan cuma makan nasi goreng bareng
-    semalam."'
+  characterName: Lyn
+  characterImage: {fileID: 21300000, guid: e74fb000cdb4e443f97942c2e3ba8172, type: 3}
+  dialogueText: Tapi... kita kan cuma makan nasi goreng bareng semalam.
