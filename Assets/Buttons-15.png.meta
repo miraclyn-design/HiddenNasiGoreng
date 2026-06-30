@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e660f4c7437f4f93a6bd9425f92a4e6
+guid: e1f236a0e0eb94003b417acfdc71cc66
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8715277751484119316
-    second: Attempt + Ingredients-15_0
+      213: 356291551467089362
+    second: Buttons-15_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 600
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attempt + Ingredients-15_0
+      name: Buttons-15_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 323
-        height: 323
+        width: 1439
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce68cef7f0d1d0780800000000000000
-      internalID: -8715277751484119316
+      spriteID: 2dd2ba1474dc1f400800000000000000
+      internalID: 356291551467089362
       vertices: []
       indices: 
       edges: []
@@ -177,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attempt + Ingredients-15_0: -8715277751484119316
+      Buttons-15_0: 356291551467089362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

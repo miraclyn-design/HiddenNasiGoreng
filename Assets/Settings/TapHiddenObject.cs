@@ -46,42 +46,50 @@ public class TapHiddenObject : MonoBehaviour
 
     void Update()
     {
-        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
-        {
-            Vector2 touchPos = Touchscreen.current.primaryTouch.position.ReadValue();
-            Vector2 worldPos = mainCamera.ScreenToWorldPoint(touchPos);
+        // if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+        // {
+        //     Vector2 touchPos = Touchscreen.current.primaryTouch.position.ReadValue();
+        //     Vector2 worldPos = mainCamera.ScreenToWorldPoint(touchPos);
 
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
+        //     RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
 
-            if (hit.collider != null && hit.collider.gameObject == gameObject)
-            {
-                if (spriteSaatDitap != null)
-                    spriteRendererSegitiga.sprite = spriteSaatDitap;
-
-                if (spriteRendererKotak != null)
-                {
-                    Color c = spriteRendererKotak.color;
-                    c.a = alphaKotakAktif;
-                    spriteRendererKotak.color = c;
-                }
-
-                if (!isFound)
-                {                    
-                    isFound = true;
-                }
+        //     if (hit.collider != null && hit.collider.gameObject == gameObject)
+        //     {
                 
+        //     }
+        // }
+    }
 
-                if (tapSound != null && audioSource != null)
-                {
-                    audioSource.pitch = Random.Range(0.9f, 1.1f);
-                    audioSource.PlayOneShot(tapSound);
-                }
+    public void CheckTapKenaIniObject(Collider2D _collider)
+    {
+        if(_collider.gameObject == gameObject)
+        {
+            if (spriteSaatDitap != null)
+                spriteRendererSegitiga.sprite = spriteSaatDitap;
 
-                if(isFound)
-                objBener.SetActive(true);
-
-                    MOST_HapticFeedback.Generate(MOST_HapticFeedback.HapticTypes.Success);
+            if (spriteRendererKotak != null)
+            {
+                Color c = spriteRendererKotak.color;
+                c.a = alphaKotakAktif;
+                spriteRendererKotak.color = c;
             }
+
+            if (!isFound)
+            {                    
+                isFound = true;
+            }
+            
+
+            if (tapSound != null && audioSource != null)
+            {
+                audioSource.pitch = Random.Range(0.9f, 1.1f);
+                audioSource.PlayOneShot(tapSound);
+            }
+
+            if(isFound)
+            objBener.SetActive(true);
+
+            MOST_HapticFeedback.Generate(MOST_HapticFeedback.HapticTypes.Success);
         }
     }
 

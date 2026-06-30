@@ -1,8 +1,12 @@
 using UnityEngine;
 using TMPro;
+using JetBrains.Annotations;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] protected Tap tap;
+
     public static GameManager Instance;
 
     public int totalItemAmount = 5;
@@ -11,6 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] ParticleSystem WinParticle;
     public AudioSource sfxParticle;
     public AudioSource sfxYey;
+    public AudioSource sfxWinRiweh;
+    public AudioSource sfxSingSing;
 
     public TMP_Text txtItem;
 
@@ -34,6 +40,13 @@ public class GameManager : MonoBehaviour
 
             sfxYey.pitch = Random.Range(0.9f, 1.2f);
             sfxYey.PlayOneShot(sfxYey.clip);
+
+            tap.SetBolehDitekan(false);
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
     }
 }
